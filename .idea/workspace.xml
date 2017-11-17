@@ -2,123 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a9ae81-1740-442a-b5b3-8d27d106a168" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontawesome-webfont.svgz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/fancybox_loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/fancybox_loading@2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/fancybox_overlay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/fancybox_sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/fancybox_sprite@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/helpers/fancybox_buttons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/3.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/5.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/coderwall.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/delicious.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/douban.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/git.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gitcommands.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/github.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/google.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/img-err.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/img-loading.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/linkedin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/me.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pinboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pinterest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/scrollbar_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/stackoverflow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/weibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/zhihu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/hzmk.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/lenovointer.github.io.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/04/Native JS/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/04/es6/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/04/react/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/04/someTips/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/07/Mongodb/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/07/goodWords/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/09/git/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/10/jade/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/11/github-project/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/11/js-class/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/11/js-extends/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/22/jsFramework/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/23/js-this/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/25/jsReaserch/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2015/12/27/sumup/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2016/03/21/webpack-development/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/2015/12/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/2015/12/page/2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/2015/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/2015/page/2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/2016/03/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/2016/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archives/page/2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/categories/tech/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/helpers/jquery.fancybox-buttons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/helpers/jquery.fancybox-buttons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/helpers/jquery.fancybox-media.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/helpers/jquery.fancybox-thumbs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/helpers/jquery.fancybox-thumbs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/jquery.fancybox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/jquery.fancybox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox/jquery.fancybox.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/instagram.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.lazyload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mobile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/pc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/ECMAScript6/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/MongoDB/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/Mongoose/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/Node-js/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/bower/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/brew/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/es6/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/git/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/github/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/jade/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/javascript/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/js/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/linux/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/nvm/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/react-native/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/reactjs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/this/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/tips/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/webpack/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/前端/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/学习笔记/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/小结/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/框架/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/模板引擎/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tags/随笔/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tech/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html" afterPath="$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/04/Native JS/index.html" afterPath="$PROJECT_DIR$/2015/12/04/Native JS/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/04/es6/index.html" afterPath="$PROJECT_DIR$/2015/12/04/es6/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/04/react/index.html" afterPath="$PROJECT_DIR$/2015/12/04/react/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/04/someTips/index.html" afterPath="$PROJECT_DIR$/2015/12/04/someTips/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/07/Mongodb/index.html" afterPath="$PROJECT_DIR$/2015/12/07/Mongodb/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/07/goodWords/index.html" afterPath="$PROJECT_DIR$/2015/12/07/goodWords/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/09/git/index.html" afterPath="$PROJECT_DIR$/2015/12/09/git/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/10/jade/index.html" afterPath="$PROJECT_DIR$/2015/12/10/jade/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/11/github-project/index.html" afterPath="$PROJECT_DIR$/2015/12/11/github-project/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/11/js-class/index.html" afterPath="$PROJECT_DIR$/2015/12/11/js-class/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/11/js-extends/index.html" afterPath="$PROJECT_DIR$/2015/12/11/js-extends/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/22/jsFramework/index.html" afterPath="$PROJECT_DIR$/2015/12/22/jsFramework/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/23/js-this/index.html" afterPath="$PROJECT_DIR$/2015/12/23/js-this/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/25/jsReaserch/index.html" afterPath="$PROJECT_DIR$/2015/12/25/jsReaserch/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/27/sumup/index.html" afterPath="$PROJECT_DIR$/2015/12/27/sumup/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016/03/21/webpack-development/index.html" afterPath="$PROJECT_DIR$/2016/03/21/webpack-development/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2015/12/index.html" afterPath="$PROJECT_DIR$/archives/2015/12/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2015/12/page/2/index.html" afterPath="$PROJECT_DIR$/archives/2015/12/page/2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2015/index.html" afterPath="$PROJECT_DIR$/archives/2015/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2015/page/2/index.html" afterPath="$PROJECT_DIR$/archives/2015/page/2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2016/03/index.html" afterPath="$PROJECT_DIR$/archives/2016/03/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2016/index.html" afterPath="$PROJECT_DIR$/archives/2016/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/index.html" afterPath="$PROJECT_DIR$/archives/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/page/2/index.html" afterPath="$PROJECT_DIR$/archives/page/2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/categories/tech/index.html" afterPath="$PROJECT_DIR$/categories/tech/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/2/index.html" afterPath="$PROJECT_DIR$/page/2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/ECMAScript6/index.html" afterPath="$PROJECT_DIR$/tags/ECMAScript6/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/MongoDB/index.html" afterPath="$PROJECT_DIR$/tags/MongoDB/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/Mongoose/index.html" afterPath="$PROJECT_DIR$/tags/Mongoose/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/Node-js/index.html" afterPath="$PROJECT_DIR$/tags/Node-js/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/bower/index.html" afterPath="$PROJECT_DIR$/tags/bower/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/brew/index.html" afterPath="$PROJECT_DIR$/tags/brew/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/es6/index.html" afterPath="$PROJECT_DIR$/tags/es6/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/git/index.html" afterPath="$PROJECT_DIR$/tags/git/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/github/index.html" afterPath="$PROJECT_DIR$/tags/github/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/jade/index.html" afterPath="$PROJECT_DIR$/tags/jade/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/javascript/index.html" afterPath="$PROJECT_DIR$/tags/javascript/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/js/index.html" afterPath="$PROJECT_DIR$/tags/js/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/linux/index.html" afterPath="$PROJECT_DIR$/tags/linux/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/nvm/index.html" afterPath="$PROJECT_DIR$/tags/nvm/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/react-native/index.html" afterPath="$PROJECT_DIR$/tags/react-native/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/reactjs/index.html" afterPath="$PROJECT_DIR$/tags/reactjs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/this/index.html" afterPath="$PROJECT_DIR$/tags/this/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/tips/index.html" afterPath="$PROJECT_DIR$/tags/tips/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/webpack/index.html" afterPath="$PROJECT_DIR$/tags/webpack/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/前端/index.html" afterPath="$PROJECT_DIR$/tags/前端/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/学习笔记/index.html" afterPath="$PROJECT_DIR$/tags/学习笔记/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/小结/index.html" afterPath="$PROJECT_DIR$/tags/小结/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/框架/index.html" afterPath="$PROJECT_DIR$/tags/框架/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/模板引擎/index.html" afterPath="$PROJECT_DIR$/tags/模板引擎/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/随笔/index.html" afterPath="$PROJECT_DIR$/tags/随笔/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tech/index.html" afterPath="$PROJECT_DIR$/tech/index.html" />
     </list>
     <ignored path="lenovointer.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,29 +78,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5608181">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -170,6 +93,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
@@ -177,9 +107,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-308" />
-    <option name="y" value="-1057" />
+    <option name="y" value="-1080" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -235,6 +165,50 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="FullScreen" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -247,21 +221,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-308" y="-1057" width="1920" height="1057" extended-state="6" />
-    <editor active="false" />
+    <frame x="-308" y="-1080" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68415844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32988626" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38217822" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -276,26 +250,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/tags/随笔/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.235727">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5608181">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
   </component>

@@ -2,25 +2,25 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
-  <title>也谈webpack及其开发模式 | trigkit4的前端博客</title>
+
+  <title>也谈webpack及其开发模式 | lenovointer的前端博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="从模块化谈起近年来，js开发涌现出了诸多模块化解决方案，例如以在浏览器环境之外（服务端）构建 JavaScript 生态系统为目标而产生的CommonJS规范，从CommonJS社区中独立出来的AMD规范（异步模块定义），还有国人制定的CMD规范等。随着遵循AMD规范的RequireJS的流行，AMD规范在前端界已被广泛认同。后来，随着npm社区的逐渐壮大，CommonJS也越来越受欢迎，于是产生">
 <meta property="og:type" content="article">
 <meta property="og:title" content="也谈webpack及其开发模式">
-<meta property="og:url" content="hawx1993.github.io/2016/03/21/webpack-development/index.html">
-<meta property="og:site_name" content="trigkit4的前端博客">
+<meta property="og:url" content="lenovointer.github.io/2016/03/21/webpack-development/index.html">
+<meta property="og:site_name" content="lenovointer的前端博客">
 <meta property="og:description" content="从模块化谈起近年来，js开发涌现出了诸多模块化解决方案，例如以在浏览器环境之外（服务端）构建 JavaScript 生态系统为目标而产生的CommonJS规范，从CommonJS社区中独立出来的AMD规范（异步模块定义），还有国人制定的CMD规范等。随着遵循AMD规范的RequireJS的流行，AMD规范在前端界已被广泛认同。后来，随着npm社区的逐渐壮大，CommonJS也越来越受欢迎，于是产生">
 <meta property="og:updated_time" content="2016-03-21T04:49:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="也谈webpack及其开发模式">
 <meta name="twitter:description" content="从模块化谈起近年来，js开发涌现出了诸多模块化解决方案，例如以在浏览器环境之外（服务端）构建 JavaScript 生态系统为目标而产生的CommonJS规范，从CommonJS社区中独立出来的AMD规范（异步模块定义），还有国人制定的CMD规范等。随着遵循AMD规范的RequireJS的流行，AMD规范在前端界已被广泛认同。后来，随着npm社区的逐渐壮大，CommonJS也越来越受欢迎，于是产生">
-  
-    <link rel="alternative" href="/atom.xml" title="trigkit4的前端博客" type="application/atom+xml">
-  
-  
+
+    <link rel="alternative" href="/atom.xml" title="lenovointer的前端博客" type="application/atom+xml">
+
+
     <link rel="icon" href="/img/favicon.ico">
-  
+
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <body>
@@ -30,20 +30,20 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			
+
 			<img lazy-src="/img/me.jpeg" class="js-avatar">
-			
+
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">trigkit4</a></h1>
+		  <h1 class="header-author"><a href="/">lenovointer</a></h1>
 		</hgroup>
 
-		
-		<p class="header-subtitle">trigkit4 | 前端笔记</p>
-		
 
-		
+		<p class="header-subtitle">lenovointer | 前端笔记</p>
+
+
+
 			<div class="switch-btn">
 				<div class="icon">
 					<div class="icon-ctn">
@@ -54,99 +54,99 @@
 						<div class="icon-wrap icon-ribbon hide" data-idx="1">
 							<div class="ribbon"></div>
 						</div>
-						
+
 						<div class="icon-wrap icon-link hide" data-idx="2">
 							<div class="loopback_l"></div>
 							<div class="loopback_r"></div>
 						</div>
-						
-						
+
+
 						<div class="icon-wrap icon-me hide" data-idx="3">
 							<div class="user"></div>
 							<div class="shoulder"></div>
 						</div>
-						
+
 					</div>
-					
+
 				</div>
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
 					<ul class="tips-inner">
 						<li>菜单</li>
 						<li>标签</li>
-						
+
 						<li>友情链接</li>
-						
-						
+
+
 						<li>关于我</li>
-						
+
 					</ul>
 				</div>
 			</div>
-		
+
 
 		<div class="switch-area">
 			<div class="switch-wrap">
 				<section class="switch-part switch-part1">
 					<nav class="header-menu">
 						<ul>
-						
+
 							<li><a href="/">主页</a></li>
-				        
+
 							<li><a href="/archives">所有文章</a></li>
-				        
+
 							<li><a href="/tags/随笔">随笔</a></li>
-				        
+
 						</ul>
 					</nav>
 					<nav class="header-nav">
 						<div class="social">
-							
+
 								<a class="github" target="_blank" href="https://github.com/hawx1993" title="github">github</a>
-					        
+
 								<a class="weibo" target="_blank" href="http://weibo.com/hawx1993" title="weibo">weibo</a>
-					        
-								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/trigkit4" title="zhihu">zhihu</a>
-					        
+
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/lenovointer" title="zhihu">zhihu</a>
+
 						</div>
 					</nav>
 				</section>
-				
-				
+
+
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
 						<a href="/tags/ECMAScript6/" style="font-size: 10px;">ECMAScript6</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/MongoDB/" style="font-size: 10px;">MongoDB</a> <a href="/tags/MongoDb/" style="font-size: 10px;">MongoDb</a> <a href="/tags/Mongoose/" style="font-size: 10px;">Mongoose</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/bower/" style="font-size: 10px;">bower</a> <a href="/tags/brew/" style="font-size: 10px;">brew</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/jade/" style="font-size: 10px;">jade</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/react-native/" style="font-size: 10px;">react-native</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/tips/" style="font-size: 10px;">tips</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/学习笔记/" style="font-size: 10px;">学习笔记</a> <a href="/tags/小结/" style="font-size: 10px;">小结</a> <a href="/tags/框架/" style="font-size: 10px;">框架</a> <a href="/tags/模板引擎/" style="font-size: 10px;">模板引擎</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
-				
-				
-				
+
+
+
 				<section class="switch-part switch-part3">
 					<div id="js-friends">
-					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://segmentfault.com/u/trigkit4">我的sf</a>
-			        
+
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://segmentfault.com/u/lenovointer">我的sf</a>
+
 			        </div>
 				</section>
-				
 
-				
-				
+
+
+
 				<section class="switch-part switch-part4">
-				
+
 					<div id="js-aboutme">大二开始接触前端开发，大三在美团实习。喜欢简洁风格，Mac重度用户。喜爱折腾的前端工程师一枚</div>
 				</section>
-				
+
 			</div>
 		</div>
-	</header>				
+	</header>
 </div>
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">trigkit4</h1>
+  		<h1 class="header-author js-mobile-header hide">lenovointer</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
@@ -154,67 +154,67 @@
 				<img lazy-src="/img/me.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author">trigkit4</h1>
+			  <h1 class="header-author">lenovointer</h1>
 			</hgroup>
-			
-			<p class="header-subtitle">trigkit4 | 前端笔记</p>
-			
+
+			<p class="header-subtitle">lenovointer | 前端笔记</p>
+
 			<nav class="header-menu">
 				<ul>
-				
+
 					<li><a href="/">主页</a></li>
-		        
+
 					<li><a href="/archives">所有文章</a></li>
-		        
+
 					<li><a href="/tags/随笔">随笔</a></li>
-		        
+
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
 			<nav class="header-nav">
 				<div class="social">
-					
+
 						<a class="github" target="_blank" href="https://github.com/hawx1993" title="github">github</a>
-			        
+
 						<a class="weibo" target="_blank" href="http://weibo.com/hawx1993" title="weibo">weibo</a>
-			        
-						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/trigkit4" title="zhihu">zhihu</a>
-			        
+
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/lenovointer" title="zhihu">zhihu</a>
+
 				</div>
 			</nav>
-		</header>				
+		</header>
 	</div>
 </nav>
       <div class="body-wrap"><article id="post-webpack-development" class="article article-type-post" itemscope itemprop="blogPost">
-  
+
     <div class="article-meta">
       <a href="/2016/03/21/webpack-development/" class="article-date">
   	<time datetime="2016-03-21T04:43:46.000Z" itemprop="datePublished">2016-03-21</time>
 </a>
     </div>
-  
+
   <div class="article-inner">
-    
+
       <input type="hidden" class="isFancy" />
-    
-    
+
+
       <header class="article-header">
-        
-  
+
+
     <h1 class="article-title" itemprop="name">
       也谈webpack及其开发模式
     </h1>
-  
+
 
       </header>
-      
+
       <div class="article-info article-info-post">
-        
+
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li></ul>
 	</div>
 
-        
+
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/tech/">tech</a>
 	</div>
@@ -222,10 +222,10 @@
 
         <div class="clearfix"></div>
       </div>
-      
-    
+
+
     <div class="article-entry" itemprop="articleBody">
-      
+
         <h1 id="u4ECE_u6A21_u5757_u5316_u8C08_u8D77"><a href="#u4ECE_u6A21_u5757_u5316_u8C08_u8D77" class="headerlink" title="从模块化谈起"></a>从模块化谈起</h1><p>近年来，js开发涌现出了诸多模块化解决方案，例如以在浏览器环境之外（服务端）构建 <code>JavaScript</code> 生态系统为目标而产生的<code>CommonJS</code>规范，从<code>CommonJS</code>社区中独立出来的<code>AMD</code>规范（异步模块定义），还有国人制定的<code>CMD</code>规范等。随着遵循<code>AMD</code>规范的<code>RequireJS</code>的流行，<code>AMD</code>规范在前端界已被广泛认同。后来，随着npm社区的逐渐壮大，<code>CommonJS</code>也越来越受欢迎，于是产生了统一这两种规范的需求，即希望提供一个前后端跨平台的解决方案，也因此产生了<code>UMD</code>（通用模块定义）规范。</p>
 <p><code>CommonJS</code>定义的是模块的同步加载，主要用于Node端；而遵循AMD规范的<code>RequireJS</code>则是异步加载，适用于浏览器端。<code>requirejs</code>是一种在线”编译” 模块的方案，相当于在页面上加载一个AMD 解释器，以便于览器能够识别<code>define、exports、module</code>，而这些东西就是用于模块化的关键。</p>
 <blockquote>
@@ -342,7 +342,7 @@
 <p><code>CommonsChunkPlugin</code>合并公共代码</p>
 </blockquote>
 <p>它用于提取多个入口文件的公共脚本部分，然后生成一个 公共文件来方便多页面之间进行复用。以下是该插件的使用方法和webpack的具体用法介绍：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</span><br><span class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">var</span> commonsPlugin = <span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(<span class="string">'common.js'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> config = &#123;</span><br><span class="line">    <span class="comment">//Webpack 本身内置了一些常用的插件，还可以通过 npm 安装第三方插件。</span></span><br><span class="line">    plugins: [commonsPlugin],</span><br><span class="line">    <span class="comment">//页面入口文件配置</span></span><br><span class="line">    entry: &#123;</span><br><span class="line">        index : <span class="string">'./index.js'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//入口文件输出配置</span></span><br><span class="line">    output: &#123;</span><br><span class="line">        path: <span class="string">'dist/js/page'</span>,</span><br><span class="line">        filename: <span class="string">'[name].js'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//module 的作用是添加loaders</span></span><br><span class="line">    <span class="built_in">module</span>: &#123;</span><br><span class="line">        <span class="comment">//加载器配置</span></span><br><span class="line">        loaders: [</span><br><span class="line">            <span class="comment">//.css 文件使用 style-loader 和 css-loader 来处理</span></span><br><span class="line">            &#123; test: <span class="regexp">/\.css$/</span>, loader: <span class="string">'style-loader!css-loader'</span> &#125;,<span class="comment">//test属性匹配css文件</span></span><br><span class="line">            <span class="comment">//.js 文件使用 jsx-loader 来编译处理</span></span><br><span class="line">            &#123; test: <span class="regexp">/\.js$/</span>, loader: <span class="string">'jsx-loader?harmony'</span> &#125;,</span><br><span class="line">            <span class="comment">//.scss 文件使用 style-loader、css-loader 和 sass-loader 来编译处理</span></span><br><span class="line">            &#123; test: <span class="regexp">/\.scss$/</span>, loader: <span class="string">'style!css!sass?sourceMap'</span>&#125;,</span><br><span class="line">            <span class="comment">//图片文件使用 url-loader 来处理，小于8kb的直接转为base64</span></span><br><span class="line">            &#123; test: <span class="regexp">/\.(png|jpg)$/</span>, loader: <span class="string">'url-loader?limit=8192'</span>&#125;,</span><br><span class="line">            &#123;<span class="comment">//处理字体</span></span><br><span class="line">              test: <span class="regexp">/\.(woff2?|otf|eot|svg|ttf)$/i</span>,</span><br><span class="line">            &#125;,</span><br><span class="line">            loader: <span class="string">'style!css'</span><span class="comment">//加载style和css loader</span></span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//其它解决方案配置</span></span><br><span class="line">    resolve: &#123;</span><br><span class="line">        root: <span class="string">'/Users/trigkit4/webpack'</span>, <span class="comment">//绝对路径</span></span><br><span class="line">        extensions: [<span class="string">''</span>, <span class="string">'.js'</span>, <span class="string">'.json'</span>, <span class="string">'.scss'</span>],<span class="comment">//文件扩展名</span></span><br><span class="line">        <span class="comment">//模块别名定义，方便后续直接引用别名</span></span><br><span class="line">        alias: &#123;</span><br><span class="line">            a : <span class="string">'./assets/a.js'</span>,  <span class="comment">// require(“a”)即可引用该模块</span></span><br><span class="line">            b : <span class="string">'./assets/b.js'</span>,</span><br><span class="line">            c : <span class="string">'./assets/c.js'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = config;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</span><br><span class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">var</span> commonsPlugin = <span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(<span class="string">'common.js'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> config = &#123;</span><br><span class="line">    <span class="comment">//Webpack 本身内置了一些常用的插件，还可以通过 npm 安装第三方插件。</span></span><br><span class="line">    plugins: [commonsPlugin],</span><br><span class="line">    <span class="comment">//页面入口文件配置</span></span><br><span class="line">    entry: &#123;</span><br><span class="line">        index : <span class="string">'./index.js'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//入口文件输出配置</span></span><br><span class="line">    output: &#123;</span><br><span class="line">        path: <span class="string">'dist/js/page'</span>,</span><br><span class="line">        filename: <span class="string">'[name].js'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//module 的作用是添加loaders</span></span><br><span class="line">    <span class="built_in">module</span>: &#123;</span><br><span class="line">        <span class="comment">//加载器配置</span></span><br><span class="line">        loaders: [</span><br><span class="line">            <span class="comment">//.css 文件使用 style-loader 和 css-loader 来处理</span></span><br><span class="line">            &#123; test: <span class="regexp">/\.css$/</span>, loader: <span class="string">'style-loader!css-loader'</span> &#125;,<span class="comment">//test属性匹配css文件</span></span><br><span class="line">            <span class="comment">//.js 文件使用 jsx-loader 来编译处理</span></span><br><span class="line">            &#123; test: <span class="regexp">/\.js$/</span>, loader: <span class="string">'jsx-loader?harmony'</span> &#125;,</span><br><span class="line">            <span class="comment">//.scss 文件使用 style-loader、css-loader 和 sass-loader 来编译处理</span></span><br><span class="line">            &#123; test: <span class="regexp">/\.scss$/</span>, loader: <span class="string">'style!css!sass?sourceMap'</span>&#125;,</span><br><span class="line">            <span class="comment">//图片文件使用 url-loader 来处理，小于8kb的直接转为base64</span></span><br><span class="line">            &#123; test: <span class="regexp">/\.(png|jpg)$/</span>, loader: <span class="string">'url-loader?limit=8192'</span>&#125;,</span><br><span class="line">            &#123;<span class="comment">//处理字体</span></span><br><span class="line">              test: <span class="regexp">/\.(woff2?|otf|eot|svg|ttf)$/i</span>,</span><br><span class="line">            &#125;,</span><br><span class="line">            loader: <span class="string">'style!css'</span><span class="comment">//加载style和css loader</span></span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//其它解决方案配置</span></span><br><span class="line">    resolve: &#123;</span><br><span class="line">        root: <span class="string">'/Users/lenovointer/webpack'</span>, <span class="comment">//绝对路径</span></span><br><span class="line">        extensions: [<span class="string">''</span>, <span class="string">'.js'</span>, <span class="string">'.json'</span>, <span class="string">'.scss'</span>],<span class="comment">//文件扩展名</span></span><br><span class="line">        <span class="comment">//模块别名定义，方便后续直接引用别名</span></span><br><span class="line">        alias: &#123;</span><br><span class="line">            a : <span class="string">'./assets/a.js'</span>,  <span class="comment">// require(“a”)即可引用该模块</span></span><br><span class="line">            b : <span class="string">'./assets/b.js'</span>,</span><br><span class="line">            c : <span class="string">'./assets/c.js'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = config;</span><br></pre></td></tr></table></figure>
 <p><code>Webpack</code>中将打包后的文件都称之为<code>Chunk</code>。这个插件可以将多个打包后的资源中的公共部分打包成单独的文件。这里指定公共文件输出为<code>common.js</code></p>
 <p><code>Webpack</code> 本身只能处理 <code>JavaScript</code> 模块，如果要处理其他类型的文件，就需要使用<code>loader</code>进行转换。<br>不同模块的加载是通过模块加载器（<code>webpack-loader</code>）来统一管理的。</p>
 <p><code>！</code>用来定义<code>loader</code>的串联关系，<code>”-loader”</code>是可以省略不写的，多个<code>loader</code>之间用<code>“!”</code>连接起来，但所有的加载器都需要通过<code>npm</code>来加载。</p>
@@ -387,26 +387,26 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> BrowserSyncPlugin = <span class="built_in">require</span>(<span class="string">'browser-sync-webpack-plugin'</span>);</span><br><span class="line"> </span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="comment">// ... </span></span><br><span class="line">  plugins: [</span><br><span class="line">    <span class="keyword">new</span> BrowserSyncPlugin(&#123;</span><br><span class="line">      <span class="comment">// browse to http://localhost:3000/ during development, </span></span><br><span class="line">      <span class="comment">// ./public directory is being served </span></span><br><span class="line">      host: <span class="string">'localhost'</span>,</span><br><span class="line">      port: <span class="number">3000</span>,</span><br><span class="line">      server: &#123; baseDir: [<span class="string">'public'</span>] &#125; <span class="comment">//根目录就填'./'</span></span><br><span class="line">    &#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="u5B9E_u4F8B_u4E8C_uFF1Areact+webpack+es6_u5F00_u53D1_u6A21_u5F0F"><a href="#u5B9E_u4F8B_u4E8C_uFF1Areact+webpack+es6_u5F00_u53D1_u6A21_u5F0F" class="headerlink" title="实例二：<code>react+webpack+es6</code>开发模式"></a>实例二：<code>react+webpack+es6</code>开发模式</h2><p>具体项目地址请移步：<a href="https://github.com/hawx1993/react-webpack-demos" target="_blank" rel="external">https://github.com/hawx1993/react-webpack-demos</a></p>
 <blockquote>
-<p>在线DEMO:<a href="http://hawx1993.github.io/react-webpack-es6-demos/">http://hawx1993.github.io/react-webpack-es6-demos/</a></p>
+<p>在线DEMO:<a href="http://lenovointer.github.io/react-webpack-es6-demos/">http://lenovointer.github.io/react-webpack-es6-demos/</a></p>
 </blockquote>
 
-      
+
     </div>
-    
+
   </div>
-  
-    
+
+
 <nav id="article-nav">
-  
-  
+
+
     <a href="/2015/12/27/sumup/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">我的2015年末小结</div>
       <strong class="article-nav-caption">></strong>
     </a>
-  
+
 </nav>
 
-  
+
 </article>
 
 
@@ -429,11 +429,11 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="webpack-development" data-title="也谈webpack及其开发模式" data-url="hawx1993.github.io/2016/03/21/webpack-development/"></div>
+	<div class="ds-thread" data-thread-key="webpack-development" data-title="也谈webpack及其开发模式" data-url="lenovointer.github.io/2016/03/21/webpack-development/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
-		var duoshuoQuery = {short_name:"trigkit4"};
+		var duoshuoQuery = {short_name:"lenovointer"};
 		(function() {
 			var ds = document.createElement('script');
 			ds.type = 'text/javascript';ds.async = true;
@@ -454,13 +454,13 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 trigkit4
+    		&copy; 2016 lenovointer
     	</div>
     </div>
   </div>
 </footer>
     </div>
-    
+
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
 
 
@@ -497,8 +497,8 @@ MathJax.Hub.Config({
 MathJax.Hub.Queue(function() {
     var all = MathJax.Hub.getAllJax(), i;
     for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
 });
 </script>
 
