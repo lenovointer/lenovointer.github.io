@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>react 学习笔记 | trigkit4的前端博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="React Native提供了哪些能力&quot;&amp;gt;React Native提供了哪些能力
+基于原生UI组件
+
+手势识别
+
+基于FlexBox的css布局模式
+
+跨平台开发
+
+基于React，jsx的组件化开发模式
+
+可使用npm中的模块
+
+Chrome Dev Tool的集成
+
+
+特点：JSX语法，组件化模式，Virtual DOM，单向数据流
+基本模式：每个React组件由属性(property)和状态">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react 学习笔记">
+<meta property="og:url" content="hawx1993.github.io/2015/12/04/react/index.html">
+<meta property="og:site_name" content="trigkit4的前端博客">
+<meta property="og:description" content="React Native提供了哪些能力&quot;&amp;gt;React Native提供了哪些能力
+基于原生UI组件
+
+手势识别
+
+基于FlexBox的css布局模式
+
+跨平台开发
+
+基于React，jsx的组件化开发模式
+
+可使用npm中的模块
+
+Chrome Dev Tool的集成
+
+
+特点：JSX语法，组件化模式，Virtual DOM，单向数据流
+基本模式：每个React组件由属性(property)和状态">
+<meta property="og:updated_time" content="2015-12-23T09:59:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="react 学习笔记">
+<meta name="twitter:description" content="React Native提供了哪些能力&quot;&amp;gt;React Native提供了哪些能力
+基于原生UI组件
+
+手势识别
+
+基于FlexBox的css布局模式
+
+跨平台开发
+
+基于React，jsx的组件化开发模式
+
+可使用npm中的模块
+
+Chrome Dev Tool的集成
+
+
+特点：JSX语法，组件化模式，Virtual DOM，单向数据流
+基本模式：每个React组件由属性(property)和状态">
+  
+    <link rel="alternative" href="/atom.xml" title="trigkit4的前端博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/me.jpeg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">trigkit4</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">trigkit4 | 前端笔记</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/hawx1993" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/hawx1993" title="weibo">weibo</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/trigkit4" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/ECMAScript6/" style="font-size: 10px;">ECMAScript6</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/MongoDB/" style="font-size: 10px;">MongoDB</a> <a href="/tags/MongoDb/" style="font-size: 10px;">MongoDb</a> <a href="/tags/Mongoose/" style="font-size: 10px;">Mongoose</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/bower/" style="font-size: 10px;">bower</a> <a href="/tags/brew/" style="font-size: 10px;">brew</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/jade/" style="font-size: 10px;">jade</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/react-native/" style="font-size: 10px;">react-native</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/tips/" style="font-size: 10px;">tips</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/学习笔记/" style="font-size: 10px;">学习笔记</a> <a href="/tags/小结/" style="font-size: 10px;">小结</a> <a href="/tags/框架/" style="font-size: 10px;">框架</a> <a href="/tags/模板引擎/" style="font-size: 10px;">模板引擎</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://segmentfault.com/u/trigkit4">我的sf</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">大二开始接触前端开发，大三在美团实习。喜欢简洁风格，Mac重度用户。喜爱折腾的前端工程师一枚</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">trigkit4</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/me.jpeg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">trigkit4</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">trigkit4 | 前端笔记</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/hawx1993" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/hawx1993" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/trigkit4" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-react" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/04/react/" class="article-date">
+  	<time datetime="2015-12-04T07:29:21.000Z" itemprop="datePublished">2015-12-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      react 学习笔记
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-native/">react-native</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reactjs/">reactjs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习笔记/">学习笔记</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="React_Native_u63D0_u4F9B_u4E86_u54EA_u4E9B_u80FD_u529B"><a href="#React_Native_u63D0_u4F9B_u4E86_u54EA_u4E9B_u80FD_u529B" class="headerlink" title="<code>React Native</code>提供了哪些能力"></a><code>React Native</code>提供了哪些能力</h3><ul>
+<li><p>基于原生UI组件</p>
+</li>
+<li><p>手势识别</p>
+</li>
+<li><p>基于<code>FlexBox</code>的<code>css</code>布局模式</p>
+</li>
+<li><p>跨平台开发</p>
+</li>
+<li><p>基于<code>React</code>，<code>jsx</code>的组件化开发模式</p>
+</li>
+<li><p>可使用<code>npm</code>中的模块</p>
+</li>
+<li><p>Chrome Dev Tool的集成</p>
+</li>
+</ul>
+<p>特点：<code>JSX</code>语法，组件化模式，<code>Virtual DOM</code>，单向数据流</p>
+<p>基本模式：每个<code>React</code>组件由属性(property)和状态（state）来配置，当状态发生变化时更新UI，组件的结构是由虚拟的DOM来维护，确保了实际更新的<code>DOM</code>只包括真正产生了状态变化的部分</p>
+<a id="more"></a>
+<hr>
+<p><code>Virtual DOM</code> = <code>UI</code> 虚拟机</p>
+<p><br></p>
+<p>首字母大写的是自定义组件，首字母小写的是DOM组件（元素）</p>
+<p><br></p>
+<p>在 <code>JavaScript</code> 代码里写着 <code>XML</code> 格式的代码称为 <code>JSX</code>；或者说可以直接在js中书写HTML代码</p>
+<p>上面命令可以将 <code>src</code> 子目录的 <code>js</code> 文件进行语法转换，转码后的文件全部放在 <code>build</code> 子目录。</p>
+<p><br></p>
+<p><code>React</code>允许将代码封装成组件（component），然后像插入普通 <code>HTML</code> 标签一样，在网页中插入这个组件。<code>React.createClass</code> 方法就用于生成一个组件类</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> HelloMessage = React.createClass(&#123;</span><br><span class="line"></span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Hello &#123;this.props.name&#125;<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>;</span></span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">React.render(</span><br><span class="line"></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="title">HelloMessage</span> <span class="attribute">name</span>=<span class="value">"John"</span> /&gt;</span>,</span><br><span class="line"></span><br><span class="line">  document.getElementById('example')</span><br><span class="line"></span><br><span class="line">);</span></span><br></pre></td></tr></table></figure>
+<p>我们通过 <code>JavaScript</code> 对象传递一些方法到 <code>React.createClass()</code> 来创建一个新的<code>React</code>组件。其中最重要的方法是 <code>render</code>，该方法返回一颗 <code>React</code> 组件树，这棵树最终将会渲染成 <code>HTML</code>。</p>
+<p><br></p>
+<blockquote>
+<p>Virtual DOM：相对Browser环境下的DOM（文档对象模型）而言，Virtual DOM是DOM在内存中的一种轻量级表达方式</p>
+</blockquote>
+<p>（原话是lightweight representation of the document），可以通过不同的渲染引擎生成不同平台下的UI，</p>
+<p>JS和Native之间通过Bridge通信（React Native通信机制详解 « bang’s blog）。</p>
+<p><br></p>
+<p>虚拟 DOM 是躺在内存里的一种特殊的结构，我们可以理解为这是真实 DOM 在内存里的映射。</p>
+<p><br></p>
+<p>除了结构上的映射外，这个虚拟的 DOM 还包括了渲染真实所需要的数据以及事件绑定。</p>
+<p>虚拟 <code>DOM</code> 在创建时，首先是使用 <code>JSX</code> 的语法生成一个真实 <code>DOM</code> 树的映射，其次是从服务器端拉取远程数据，接着注入到这个虚拟 DOM 树中，同时绑定事件。</p>
+<p>接下来，调用 <code>render()</code> 方法一次性渲染出真实的 <code>DOM</code>，然后全量插入到网页中。</p>
+<p>虚拟 <code>DOM</code> 静静地躺在内存里，等待数据更新。</p>
+<p>新数据来临，调用 <code>setState()</code>方法更新数据到虚拟 DOM 中，然后自动调用 <code>render()</code> 再一次性渲染出真实的 DOM ，然后全量更新到网页中。</p>
+<blockquote>
+<p>一个虚拟 DOM，对应一个真实 DOM</p>
+<p>一份数据更新，重新生成虚拟 DOM ，全量更新真实 DOM</p>
+</blockquote>
+<p>React 编写起来，就是编写一个个的组件。</p>
+<p>使用 <code>render()</code> 方法生成真实 DOM 并插入到网页中。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 使用 React.createClass 创建一个组件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> DemoComponent = React.createClass(&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用 render 方法自动渲染 DOM</span></span><br><span class="line"></span><br><span class="line">    render: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line"></span><br><span class="line">            <span class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">className</span>=<span class="value">"component-hello"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;<span class="title">h1</span> <span class="attribute">className</span>=<span class="value">"hello-title"</span>&gt;</span>Hello React<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;<span class="title">p</span>  <span class="attribute">className</span>=<span class="value">"hello-desc"</span>&gt;</span>React 初探<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">className</span>=<span class="value">"hello-movies"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="tag">&lt;<span class="title">p2</span>&gt;</span>我喜欢的电影<span class="tag">&lt;/<span class="title">p2</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">className</span>=<span class="value">"movie-item"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">className</span>=<span class="value">"movie-name"</span>&gt;</span>速度与激情7<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                            -</span><br><span class="line"></span><br><span class="line">                            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">className</span>=<span class="value">"movie-date"</span>&gt;</span>2015<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                        <span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        )</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将组件插入到网页中指定的位置</span></span><br><span class="line"></span><br><span class="line">React.render(<span class="xml"><span class="tag">&lt;<span class="title">DemoComponent</span> /&gt;</span>, document.getElementById('demo'));</span></span><br></pre></td></tr></table></figure>
+<p>第一次渲染真实 <code>DOM</code> 时将使用 <code>getInitialState()</code> 返回的数据。</p>
+<p>第二次更新渲染真实 <code>DOM</code> 时将使用 <code>setState()</code> 设置的数据。</p>
+<p>在 React 中，数据流是单向的，且组件之间可以嵌套，我们可以通过对最顶层组件传递属性方式，向下层组件传送数据。</p>
+<p>JSX 把 JS 和 HTML 糅合起来了，这么理解是不是感觉比较简单：</p>
+<p>遇到 <code>{}</code> 包裹的是 JS，遇到 <code>&lt;&gt;</code> 包裹的是 HTML</p>
+<p><br></p>
+<ul>
+<li><code>render()</code> 返回的是一系列嵌套的组件<code>this.props</code> 获取父组件传递给子组件的数据 <code>this.setState({data: data});</code>用于动态更新状态，设置数据（设置后UI会自动刷新）</li>
+</ul>
+<p><br></p>
+<ul>
+<li><code>getInitialState()</code> 在整个组件的生命周期中只会执行一次，用于初始化数据</li>
+</ul>
+<h3 id="u64CD_u4F5C_u6570_u636E_u7684_u6D41_u7A0B"><a href="#u64CD_u4F5C_u6570_u636E_u7684_u6D41_u7A0B" class="headerlink" title="操作数据的流程"></a>操作数据的流程</h3><p>class 是关键字，改用 className 。组件名大写，不然不被识别</p>
+<p><code>React</code> 会在内存里维护一个代表<code>DOM</code>的结构，调用 <code>render</code> 方法时才生成真正的 <code>DOM</code> 插入到网页中。</p>
+<p><br></p>
+<hr>
+<p>要渲染 <code>React</code> 组件，只需创建一个大写字母开头的本地变量。要渲染 <code>HTML</code> 标签，只需在<code>JSX</code>里使用小写字母开头的标签名。</p>
+<p><code>React</code> 的 <code>JSX</code> 里约定分别使用首字母大、小写来区分本地组件的类和 HTML 标签。</p>
+<p><code>react</code>的宽度不支持百分比，设置宽度时不需要带单位 <code>{width: 10}</code>，单位其实是<code>pt</code></p>
+<h3 id="u603B_u7ED3"><a href="#u603B_u7ED3" class="headerlink" title="总结"></a>总结</h3><ul>
+<li>react 宽度基于<code>pt</code>为单位， 可以通过<code>Dimensions</code> 来获取宽高，<code>PixelRatio</code> 获取密度，如果想使用百分比，可以通过获取屏幕宽度手动计算。</li>
+</ul>
+<ul>
+<li>基于flex的布局</li>
+</ul>
+<pre><code>view默认宽度为100%
+
+水平居中用alignItems, 垂直居中用justifyContent
+
+基于flex能够实现现有的网格系统需求，且网格能够各种嵌套无bug
+</code></pre><hr>
+<h2 id="Reactjs__u7B14_u8BB0"><a href="#Reactjs__u7B14_u8BB0" class="headerlink" title="<code>Reactjs</code> 笔记"></a><code>Reactjs</code> 笔记</h2><blockquote>
+<p>语法糖：不影响功能和使用，增加可读性，从而减少代码出错的机会。</p>
+</blockquote>
+<p><code>&lt;script type=&quot;text/jsx&quot;&gt;</code>是必不可少的。需要引入<code>react.js</code>文件和<code>JSXTransform.js</code>文件。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/jsx"</span>&gt;</span><span class="actionscript"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> Hello = React.createClass(&#123;</span><br><span class="line"></span><br><span class="line">        render: <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">                            <span class="comment">//this表示当前React Components的实例</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> &lt;div&gt;Hello &#123;<span class="keyword">this</span>.props.name&#125;&lt;/div&gt;;<span class="comment">//这里的&lt;div&gt;和&lt;Hello/&gt;标签统称为React Components</span></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;);                <span class="comment">//React Components</span></span><br><span class="line"></span><br><span class="line">    React.render(&lt;Hello name=<span class="string">'World'</span> /&gt;,<span class="comment">//并不是真实存在的DOM标签，通过调用`React.render()`方法呈现最终页面</span></span><br><span class="line"></span><br><span class="line">    document.getElementById(<span class="string">"container"</span>);</span><br><span class="line"></span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>render()</code>方法是必须的，当被调用时，它会检查<code>this.props</code>和<code>this.state</code>并且返回一个单一的子元素。这个子元素可以是</p>
+<p>原生DOM组件的虚拟表示（例如<code>&lt;div/&gt;</code>），或者可以是你自定义的复合组件（<code>return()</code>）。</p>
+<blockquote>
+<p><code>React.render()</code>：渲染一个 ReactElement 到 DOM 中，放在 container 指定的 DOM 元素下，返回一个到该组件的引用。</p>
+</blockquote>
+<ul>
+<li><p>参数一：要渲染的<code>React Components</code></p>
+</li>
+<li><p>参数二：渲染完成后要插入的容器位置</p>
+</li>
+</ul>
+<p>要渲染 <code>HTML</code> 标签，只需在 <code>JSX</code>里使用小写字母开头的标签名。</p>
+<figure class="highlight cal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> myDivElement = &lt;<span class="keyword">div</span> className=<span class="variable">"foo"</span> /&gt;;</span><br><span class="line"></span><br><span class="line">React.render(myDivElement, document.body);</span><br></pre></td></tr></table></figure>
+<p>要渲染 <code>React</code> 组件，只需创建一个大写字母开头的本地变量。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> MyComponent = React.createClass(&#123;<span class="comment">/*...*/</span>&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myElement = <span class="xml"><span class="tag">&lt;<span class="title">MyComponent</span> <span class="attribute">someProperty</span>=<span class="value">&#123;true&#125;</span> /&gt;</span>;</span></span><br><span class="line"></span><br><span class="line">React.render(myElement, <span class="built_in">document</span>.body);</span><br></pre></td></tr></table></figure>
+<p>React 的 JSX 里约定分别使用首字母大、小写来区分本地组件的类和 HTML 标签。</p>
+<p><br></p>
+<blockquote>
+<p><code>ReactDOM.render</code></p>
+</blockquote>
+<p><code>ReactDOM.render</code> 是 <code>React</code> 的最基本方法，用于将模板转为 HTML 语言，并插入指定的 DOM 节点。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">React.render(<span class="xml"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Hello, world!<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>, document.getElementById('example')</span><br><span class="line"></span><br><span class="line">);</span></span><br></pre></td></tr></table></figure>
+<p><code>render</code>里面第二个参数必须使用JavaScript原生的<code>getElementByID</code>方法，不能使用<code>jQuery</code>来选取DOM节点。</p>
+<p><br></p>
+<p><code>HTML</code>语言直接写在<code>JavaScript</code> 语言之中，不加任何引号，这就是 JSX 的语法，它允许 HTML 与 JavaScript 的混写</p>
+<p><br></p>
+<blockquote>
+<p><code>React.createClass</code> 生成一个组件类。组件就是一个 实现预定义接口的<code>JavaScript</code>类：</p>
+</blockquote>
+<p><code>React.createClass(meta)</code>参数meta是一个实现预定义接口的<code>JavaScript</code>对象，用来 对<code>React</code>组件原型进行扩展。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> HelloMessage = React.createClass(&#123;</span><br><span class="line"></span><br><span class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Hello &#123;this.props.name&#125;<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>;</span><span class="comment">//React &lt;h1&gt; components的实例，使用 this.props 获得传入组件的数据</span></span><br><span class="line"></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line"></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="title">HelloMessage</span> <span class="attribute">name</span>=<span class="value">"John"</span> /&gt;</span>,//如果这里想放两个，可以用一个div标签包起来</span><br><span class="line"></span><br><span class="line">  document.getElementById('example')</span><br><span class="line"></span><br><span class="line">);</span></span><br></pre></td></tr></table></figure>
+<p>所有组件类都必须有自己的 <code>render</code>方法，用于输出组件。组件的属性可以在组件类的 <code>this.props</code>对象上获取，比如 <code>name</code> 属性就可以通过 <code>this.props.name</code>读取。</p>
+<p><br></p>
+<p>在 <code>HTML5</code> 的 <code>history API</code> 出现之前，前端的路由都是通过 <code>hash</code> 来实现的，<code>hash</code> 能兼容低版本的浏览器。<code>JavaScript</code>是可以通过<code>window.location.hash</code> 读取到的，读取到路径加以解析之后就可以响应不同路径的逻辑处理。</p>
+<blockquote>
+<p><code>Mounted</code>阶段</p>
+</blockquote>
+<p><code>React Components</code>被<code>render</code>解析生成对应的<code>DOM</code>节点，并被插入浏览器的DOM结构的一个过程</p>
+<p>要使用 <code>JavaScript</code>表达式作为属性值，只需把这个表达式用一对大括号 ({}) 包起来，不要用引号 (“”)。</p>
+<p><code>ReactElement</code>的属性有：<code>type,props,key</code>和<code>ref</code>。一个 <code>ReactElement</code> 实例是一个轻量的，无状态的，不可变的，虚拟的 DOM 元素 的表示。是一个虚拟 DOM。</p>
+<h3 id="u7EC4_u4EF6_u7684_u751F_u547D_u5468_u671F"><a href="#u7EC4_u4EF6_u7684_u751F_u547D_u5468_u671F" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h3><blockquote>
+<p>getInitialState：需要返回一个对象</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getInitialState 中返回的值将会作为数据的默认值, <span class="keyword">this</span>.state 用于存储数据</span><br></pre></td></tr></table></figure>
+<p>一个组件的生命周期可以理解为三个阶段：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="title">mounting</span> 组件正在插入到 DOM 中</span><br><span class="line"></span><br><span class="line">updating 组件正在重新注入新数据后更新到 DOM 中</span><br><span class="line"></span><br><span class="line">unmounting 组件从 DOM 中移除</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>mounting</code> 阶段</p>
+</blockquote>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="title">getInitialState</span><span class="params">()</span></span> 被调用，返回原始数据</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">componentWillMount</span><span class="params">()</span></span> 在组件 mounting 前调用。当组件要被挂载时这个函数被调用。</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">componentDidMount</span><span class="params">()</span></span> 在组件 mounting 完成后调用。一旦你的组件已经运行了 render 函数，并实际将组件渲染到了 DOM 中，该方法就会被调用。</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">componentWillUnmount</span><span class="params">()</span></span>：如果你准备吧组件从 DOM 移除时，这个函数将会被调用。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>updating</code> 阶段</p>
+</blockquote>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="title">componentWillReceiveProps</span><span class="params">(nextProps)</span></span> 在接收到新的 props 时调用  <span class="function"><span class="title">shouldComponentUpdate</span><span class="params">(nextProps, nextState)</span></span> 在组件需要更新 DOM 时调用，若这个函数返回 false 则告诉 React 不要更新</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">componentWillUpdate</span><span class="params">(nextProps, nextState)</span></span> 在更新发生时调用，可以在这里调用 this.<span class="function"><span class="title">steState</span><span class="params">()</span></span> 刷新数据</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">componentDidUpdate</span><span class="params">(prevProps, prevState)</span></span> 在更新完成后调用</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>unmounting</code> 阶段</p>
+</blockquote>
+<p><code>componentWillUnmount()</code>在组件移除时被调用，在这里可以对数据进行清理</p>
+<p>第一次渲染真实 <code>DOM</code> 时将使用 <code>getInitialState()</code> 返回的数据。</p>
+<p>第二次更新渲染真实 <code>DOM</code> 时将使用 <code>setState()</code> 设置的数据。</p>
+<p>使用 <code>componentDidMount</code> 在组件初始化后执行一些操作</p>
+<p>虚拟DOM元素都<code>是ReactElement</code></p>
+<p><code>React</code>拿到真实的DOM节点可以通过<code>findDOMNode</code>方法，参数就是<code>React Component</code></p>
+<p>绑定事件可以通过比如<code>onChange={this.changeHandler}</code>;来绑定到实例属性上</p>
+<blockquote>
+<p>几个重要方法</p>
+</blockquote>
+<ul>
+<li><p><code>render()</code> 返回的是一系列嵌套的组件</p>
+</li>
+<li><p><code>this.props</code> 获取父组件传递给子组件的数据</p>
+</li>
+<li><p><code>this.setState({data: data});</code> 用于动态更新状态，设置数据（设置后UI会自动刷新）</p>
+</li>
+<li><p><code>getInitialState()</code> 在整个组件的生命周期中只会执行一次，用于初始化数据</p>
+</li>
+<li><p><code>componentDidMount</code> 会在 render 后自动调用，用于异步获取数据，更新数据</p>
+</li>
+</ul>
+<p>只要是一个方法，然后方法里面可以存入复杂数据类型就可以使用大括号，比如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">React.createClass(&#123;</span><br><span class="line"></span><br><span class="line">    getInitialState:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.setState(&#123;&#125;)</span><br><span class="line"></span><br><span class="line">render:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span>(&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>可以把 refs 理解为我们在 HTML 中的id，用于定位到指定的组件。</p>
+<p>绑定事件时，我们可以使用 <code>ref=&quot;name&quot;</code> 属性对一个 DOM 节点进行标记，同时可以通过 <code>React.findDOMNode(this.refs.name)</code>获取到这个节点的原生 <code>DOM</code>。</p>
+<p><code>createElement</code>，创建<code>React</code>组件实例，支持<code>type，config，children</code>三个参数：<br><code>this.props.children</code> 属性。它表示组件的所有子节点</p>
+<blockquote>
+<p>使用属性（props）：从父组件传入的数据会做为子组件的 属性（ <code>property</code> ） ，这些 属性可以通过 <code>this.props</code> 访问到。<code>props</code> 是不可变的：它们从父组件传递过来，“属于”父组件。</p>
+</blockquote>
+<p><code>this.state</code> 是组件私有的，可以通过调用 <code>this.setState()</code> 来改变它。当 <code>state</code> 更新之后，组件就会重新渲染自己。</p>
+<p>我们通过<code>this.state.属性名</code>来访问传入<code>this.setState()</code>里的属性名，从而访问到属性值</p>
+<p><code>render()</code>方法依赖于<code>this.props</code> 和 <code>this.state</code>，框架会确保渲染出来的 UI 界面总是与输入（<code>this.props</code>和 <code>this.state</code> ）</p>
+<p>保持一致</p>
+<p>生命周期方法，按照时间先后顺序依次为：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">getDefaultProps, getInitialState,componentWillMount, componentDidMount, componentWillReceiveProps,shouldComponentUpdate, componentWillUpdate, componentDidUpdate,componentWillUnmount</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>事件处理函数的命名</p>
+</blockquote>
+<p>采用 <code>&quot;handle&quot; + &quot;EventName&quot;</code>的方式来命名。</p>
+<p>Example：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">Component</span> <span class="attribute">onClick</span>=<span class="value">&#123;this.handleClick&#125;</span> <span class="attribute">onLaunchMissiles</span>=<span class="value">&#123;this.handleLaunchMissiles&#125;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p><br></p>
+<blockquote>
+<p>组件的三种状态</p>
+</blockquote>
+<p>will 函数在进入状态之前调用，did 函数在进入状态之后调用</p>
+<p>获取默认属性，获取初始化状态，组件将要装载，将虚拟DOM转为真实DOM（render），组件已完成装载（componentDidMount,组件已经被渲染到页面上）——执行顺序从上往下</p>
+<p><br></p>
+<p><code>shouldComponentUpdate</code>当组件接收到新属性的时候触发这个函数</p>
+<p>销毁阶段只有<code>componentWillUnmount</code></p>
+<blockquote>
+<p>属性表达式</p>
+</blockquote>
+<p>要使用 <code>JavaScript</code> 表达式作为属性值，只需把这个表达式用一对大括号 (<code>{}</code>) 包起来，不要用引号 (“”)。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script type=<span class="string">"text/jsx"</span>&gt;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> Input = React.createClass(&#123;</span><br><span class="line"></span><br><span class="line">        getInitialState: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> &#123;</span><br><span class="line"></span><br><span class="line">                value: <span class="string">'hello!'</span></span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">        handleChange: <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">this</span>.setState(&#123;</span><br><span class="line"></span><br><span class="line">                vaule: event.target.value</span><br><span class="line"></span><br><span class="line">            &#125;)</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">        render: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> value = <span class="keyword">this</span>.state.value;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span>(</span><br><span class="line"></span><br><span class="line">                    <span class="xml"><span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">value</span>=<span class="value">&#123;value&#125;</span> <span class="attribute">onChange</span>=<span class="value">&#123;this.handleChange&#125;</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">                        <span class="tag">&lt;<span class="title">p</span>&gt;</span>&#123;value&#125;<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            )</span></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    ReactDOM.render(<span class="xml"><span class="tag">&lt;<span class="title">Input</span>/&gt;</span>, document.body);</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/04/es6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          ECMAScript6 学习笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/04/Native JS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于原生js的一些研究</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="react" data-title="react 学习笔记" data-url="hawx1993.github.io/2015/12/04/react/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+		var duoshuoQuery = {short_name:"trigkit4"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0]
+			|| document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 trigkit4
+    	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

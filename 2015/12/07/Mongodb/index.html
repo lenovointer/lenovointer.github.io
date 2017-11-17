@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Node.js操作MongoDB数据库 | trigkit4的前端博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Mongoose操作MongoDB&quot;&amp;gt;使用Mongoose操作MongoDBMongoose是基于node-mongodb-native开发的MongoDB nodejs驱动，可以在异步的环境下执行。
+关于在Mac下安装和使用MongoDB可以看我之前的一篇文章：
+
+文章传送门：Mac下安装MongoDB 及使用教程
+
+MongoDB PATH环境变量配置&quot;&amp;gt;MongoDB PATH环境变量配置将">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js操作MongoDB数据库">
+<meta property="og:url" content="hawx1993.github.io/2015/12/07/Mongodb/index.html">
+<meta property="og:site_name" content="trigkit4的前端博客">
+<meta property="og:description" content="Mongoose操作MongoDB&quot;&amp;gt;使用Mongoose操作MongoDBMongoose是基于node-mongodb-native开发的MongoDB nodejs驱动，可以在异步的环境下执行。
+关于在Mac下安装和使用MongoDB可以看我之前的一篇文章：
+
+文章传送门：Mac下安装MongoDB 及使用教程
+
+MongoDB PATH环境变量配置&quot;&amp;gt;MongoDB PATH环境变量配置将">
+<meta property="og:updated_time" content="2015-12-23T10:00:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Node.js操作MongoDB数据库">
+<meta name="twitter:description" content="Mongoose操作MongoDB&quot;&amp;gt;使用Mongoose操作MongoDBMongoose是基于node-mongodb-native开发的MongoDB nodejs驱动，可以在异步的环境下执行。
+关于在Mac下安装和使用MongoDB可以看我之前的一篇文章：
+
+文章传送门：Mac下安装MongoDB 及使用教程
+
+MongoDB PATH环境变量配置&quot;&amp;gt;MongoDB PATH环境变量配置将">
+  
+    <link rel="alternative" href="/atom.xml" title="trigkit4的前端博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/me.jpeg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">trigkit4</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">trigkit4 | 前端笔记</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/hawx1993" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/hawx1993" title="weibo">weibo</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/trigkit4" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/ECMAScript6/" style="font-size: 10px;">ECMAScript6</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/MongoDB/" style="font-size: 10px;">MongoDB</a> <a href="/tags/MongoDb/" style="font-size: 10px;">MongoDb</a> <a href="/tags/Mongoose/" style="font-size: 10px;">Mongoose</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/bower/" style="font-size: 10px;">bower</a> <a href="/tags/brew/" style="font-size: 10px;">brew</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/jade/" style="font-size: 10px;">jade</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/react-native/" style="font-size: 10px;">react-native</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/tips/" style="font-size: 10px;">tips</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/学习笔记/" style="font-size: 10px;">学习笔记</a> <a href="/tags/小结/" style="font-size: 10px;">小结</a> <a href="/tags/框架/" style="font-size: 10px;">框架</a> <a href="/tags/模板引擎/" style="font-size: 10px;">模板引擎</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://segmentfault.com/u/trigkit4">我的sf</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">大二开始接触前端开发，大三在美团实习。喜欢简洁风格，Mac重度用户。喜爱折腾的前端工程师一枚</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">trigkit4</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/me.jpeg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">trigkit4</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">trigkit4 | 前端笔记</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/hawx1993" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/hawx1993" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/trigkit4" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Mongodb" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/07/Mongodb/" class="article-date">
+  	<time datetime="2015-12-07T09:15:30.000Z" itemprop="datePublished">2015-12-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Node.js操作MongoDB数据库
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MongoDb/">MongoDb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mongoose/">Mongoose</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="u4F7F_u7528Mongoose_u64CD_u4F5CMongoDB"><a href="#u4F7F_u7528Mongoose_u64CD_u4F5CMongoDB" class="headerlink" title="使用<code>Mongoose</code>操作<code>MongoDB</code>"></a>使用<code>Mongoose</code>操作<code>MongoDB</code></h2><p><code>Mongoose</code>是基于<code>node-mongodb-native</code>开发的<code>MongoDB nodejs</code>驱动，可以在异步的环境下执行。</p>
+<p>关于在Mac下安装和使用<code>MongoDB</code>可以看我之前的一篇文章：</p>
+<blockquote>
+<p>文章传送门：<a href="http://segmentfault.com/a/1190000002547229#articleHeader4" target="_blank" rel="external">Mac下安装MongoDB 及使用教程</a></p>
+</blockquote>
+<h3 id="MongoDB_PATH_u73AF_u5883_u53D8_u91CF_u914D_u7F6E"><a href="#MongoDB_PATH_u73AF_u5883_u53D8_u91CF_u914D_u7F6E" class="headerlink" title="<code>MongoDB PATH</code>环境变量配置"></a><code>MongoDB PATH</code>环境变量配置</h3><p>将<code>mongodb</code>添加到环境变量中：<code>$ vim ~/.zshrc</code>，添加如下命令行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"<span class="variable">$PATH</span>:/usr/local/mongodb/bin"</span></span><br></pre></td></tr></table></figure>
+<p>当然前提是将解压出来的文件移到<code>/usr/local/mongodb</code>目录中。版本3.0.7</p>
+<p>然后就可以在终端直接使用<code>MongoDB</code>命令，而不用每次都进入<code>MongoDB</code>所在文件夹的目录啦。</p>
+<p>比如，启动<code>MongoDB</code>，直接在终端输入 <code>$ mongo</code> 就可以启动啦</p>
+<p>默认运行在 <a href="http://127.0.0.1:27017" target="_blank" rel="external">http://127.0.0.1:27017</a> 。</p>
+<p>还可以自定义端口：<code>$ mongod  --dbpath=data/db --port=27017</code>或者输入：<code>$ mongo 127.0.0.1:27017</code></p>
+<a id="more"></a>
+<h3 id="Mongoose_u7684_u4F7F_u7528"><a href="#Mongoose_u7684_u4F7F_u7528" class="headerlink" title="<code>Mongoose</code>的使用"></a><code>Mongoose</code>的使用</h3><p>首先新建一个名为<code>mongo</code>的文件夹，该文件夹就是数据库目录。然后在该目录下安装<code>mongoose</code>：<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> mongoose</span><br></pre></td></tr></table></figure></p>
+<p>在该目录下新建一个名为<code>script.js</code>的文件：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> uri = <span class="string">'mongodb://username:password@hostname:port/databasename'</span>;</span><br><span class="line"> uri = <span class="string">'mongodb://localhost/mongo'</span>;</span><br><span class="line"></span><br><span class="line">mongoose.connect(uri);</span><br><span class="line"></span><br><span class="line"><span class="comment">//在Schma里定义数据类型</span></span><br><span class="line"><span class="keyword">var</span> BookSchma = <span class="keyword">new</span> mongoose.Schema(&#123; <span class="comment">//定义一个Schema</span></span><br><span class="line">    name: <span class="built_in">String</span>,</span><br><span class="line">    author: <span class="built_in">String</span>,</span><br><span class="line">    publishTime:<span class="built_in">Date</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">mongoose.model(<span class="string">'Book'</span>,BookSchma);<span class="comment">//将该Schema发布为Model</span></span><br></pre></td></tr></table></figure>
+<p>通过<code>Model</code>我们就可以创建、删除和修改<code>mongodb</code>里面的文档，<code>MongoDB</code>为我们提供了<code>Schema</code>，<code>Schema</code>则提供了数据类型和结构的定义。</p>
+<p>然后在该目录下再新建一个名为<code>insert.js</code>的文件：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</span><br><span class="line">    <span class="built_in">require</span>(<span class="string">'./script.js'</span>);</span><br><span class="line">    <span class="keyword">var</span> Book = mongoose.model(<span class="string">'Book'</span>);<span class="comment">//Book为model name</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> book = <span class="keyword">new</span> Book(&#123;</span><br><span class="line">        name: <span class="string">'MEAN Web Development'</span>,</span><br><span class="line">        author: <span class="string">'trigkit4'</span>,</span><br><span class="line">        publishTime: <span class="keyword">new</span> <span class="built_in">Date</span>()</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    book.save(<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'save status:'</span>,err ? <span class="string">'failed'</span> : <span class="string">'success'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line"><span class="string">``</span><span class="string">`   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">打开终端，进入数据库目录（文件夹目录），输入`</span>$ node insert.js<span class="string">`，不出意外应该可以看到：</span></span><br></pre></td></tr></table></figure>
+<p>save status: success<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt;`<span class="javascript">find</span>`查询操作，返回结果包含在数组里（单个的请使用`<span class="javascript">findOne()</span>`）</span><br><span class="line"></span><br><span class="line">`<span class="javascript"></span>``<span class="javascript">js</span><br><span class="line">    <span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</span><br><span class="line">    <span class="built_in">require</span>(<span class="string">'./script'</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> Book = mongoose.model(<span class="string">'Book'</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span><br><span class="line"></span><br><span class="line">    find参数：</span><br><span class="line">    1.&lt;Object&gt;mongodb selector</span><br><span class="line">    2.&lt;Function&gt;err:错误信息，results：查询结果</span><br><span class="line">     */</span></span><br><span class="line"></span><br><span class="line">    Book.find(&#123;&#125;, <span class="function"><span class="keyword">function</span> (<span class="params">err,results</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(err)&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'error message'</span>,err);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'results'</span>,results);</span><br><span class="line">    &#125;);</span></span><br></pre></td></tr></table></figure></p>
+<p>###<code>$or(array)</code>和<code>$and(array)</code></p>
+<p>新建一个名为<code>or.js</code>的文件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</span><br><span class="line"><span class="built_in">require</span>(<span class="string">'./script'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> Book = mongoose.model(<span class="string">'Book'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> condition =&#123;</span><br><span class="line">    $or: [</span><br><span class="line">        &#123;author: <span class="string">'trigkit4'</span>&#125;,</span><br><span class="line">        &#123;author: <span class="string">'Mike'</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;;</span><br><span class="line">Book.find(condition, <span class="function"><span class="keyword">function</span> (<span class="params">err, results</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'condition error'</span>,err);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'condition'</span>,condition,<span class="string">'results'</span>,results);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>终端输入<code>$ node or.js</code>，不出意外应该能输出：</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">condition &#123; <span class="string">'$or'</span>: [ &#123; author: <span class="string">'trigkit4'</span> &#125;, &#123; author: <span class="string">'Mike'</span> &#125; ] &#125;</span><br><span class="line"> results [ &#123; __v: <span class="number">0</span>,</span><br><span class="line">    publishTime: Fri Nov <span class="number">27</span> <span class="number">2015</span> <span class="number">22</span>:<span class="number">13</span>:<span class="number">14</span> GMT+080<span class="number">0</span> (CST),</span><br><span class="line">    author: <span class="string">'trigkit4'</span>,</span><br><span class="line">    name: <span class="string">'MEAN Web Development'</span>,</span><br><span class="line">    _id: <span class="number">565864</span>fae48504c03d92f319 &#125; ]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>关于Array  </p>
+</blockquote>
+<p><code>Array</code>在<code>JavaScript</code>编程语言中并不是数组，而是集合，因此里面可以存入不同的值，以下代码等价：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Schema1 = <span class="keyword">new</span> Schema(&#123;<span class="keyword">array</span>:[]&#125;);</span><br><span class="line"><span class="keyword">var</span> Schema2 = <span class="keyword">new</span> Schema(&#123;<span class="keyword">array</span>:<span class="keyword">Array</span>&#125;);</span><br><span class="line"><span class="keyword">var</span> Schema3 = <span class="keyword">new</span> Schema(&#123;<span class="keyword">array</span>:[Schema.Types.Mixed]&#125;);</span><br><span class="line"><span class="keyword">var</span> Schema4 = <span class="keyword">new</span> Schema(&#123;<span class="keyword">array</span>:[&#123;&#125;]&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="u5728Express_u4E2D_u4F7F_u7528Mongoose"><a href="#u5728Express_u4E2D_u4F7F_u7528Mongoose" class="headerlink" title="在Express中使用Mongoose"></a>在Express中使用Mongoose</h2><p>首先先安装<code>express-generator</code></p>
+<pre><code>$ npm install express-generator -g
+</code></pre><p>安装好后，在终端执行：</p>
+<pre><code>$ express mongooseExpress
+</code></pre><p>用来生成一个express实例。</p>
+<p>然后我们在这个<code>mongooseExpress</code>文件夹下新建一个名为<code>config</code>的文件夹，然后在<code>config</code>下新建一个<code>config.js</code>文件：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    mongodb: <span class="string">'mongodb://localhost/mongo'</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>在再<code>config</code>文件夹下新建一个名为<code>mongoose.js</code>的文件：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</span><br><span class="line"><span class="keyword">var</span> config = <span class="built_in">require</span>(<span class="string">'./config'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> db = mongoose.connect(config.mongodb);<span class="comment">//连接数据库</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> db;<span class="comment">//返回数据库实例</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>然后我们再新建一个名为<code>models</code>的文件夹，然后新建一个名为<code>user.server.model.js</code>的文件：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</span><br><span class="line"><span class="keyword">var</span> UserSchema = <span class="keyword">new</span> mongoose.Schema(&#123;</span><br><span class="line">    uid: <span class="built_in">Number</span>,</span><br><span class="line">    username: <span class="built_in">String</span>,</span><br><span class="line">    createTime: <span class="built_in">Date</span>,</span><br><span class="line">    lastLogin: <span class="built_in">Date</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">mongoose.model(<span class="string">'user'</span>,UserSchema);</span><br></pre></td></tr></table></figure>
+<p>然后在刚才的<code>mongoose.js</code>中添加如下代码：<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">'../models/user.server.model.js'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>打开<code>app.js</code>，添加如下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'./config/mongoose'</span>);</span><br><span class="line"><span class="keyword">var</span> db = mongoose();</span><br></pre></td></tr></table></figure>
+<p>###使用Mongoose读取数据</p>
+<p>首先打开<code>routes</code>文件夹下的<code>users.js</code>文件，添加如下代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">'mongoose'</span>);</span><br><span class="line"><span class="keyword">var</span> User = mongoose.model(<span class="string">'User'</span>);</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/test'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> user = <span class="keyword">new</span> User(&#123;</span><br><span class="line">    uid: <span class="number">123</span>,</span><br><span class="line">    username: <span class="string">'trigkit4'</span></span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  user.save(<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err)&#123;</span><br><span class="line">      res.end(<span class="string">'Error'</span>);</span><br><span class="line">      <span class="keyword">return</span> next();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//find(&#123;&#125;)意为返回所有文档</span></span><br><span class="line">    User.find(&#123;&#125;, <span class="function"><span class="keyword">function</span> (<span class="params">err, results</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(err)&#123;</span><br><span class="line">        res.end(<span class="string">'Error'</span>);</span><br><span class="line">        <span class="keyword">return</span> next();</span><br><span class="line">      &#125;</span><br><span class="line">      res.json(results);<span class="comment">//以json数据类型返回值</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>最后，打开终端，进入<code>mongooseExpress</code>目录，执行</p>
+<pre><code>$ npm install
+</code></pre><p>将<code>package.json</code>的依赖安装好后，再执行：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install mongoose --save</span><br></pre></td></tr></table></figure>
+<p>在终端输入<code>cat package.json</code>，可以看到</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"name"</span>: <span class="string">"mongooseExpress"</span>,</span><br><span class="line">  <span class="string">"version"</span>: <span class="string">"0.0.0"</span>,</span><br><span class="line">  <span class="string">"private"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"start"</span>: <span class="string">"node ./bin/www"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="string">"body-parser"</span>: <span class="string">"~1.13.2"</span>,</span><br><span class="line">    <span class="string">"cookie-parser"</span>: <span class="string">"~1.3.5"</span>,</span><br><span class="line">    <span class="string">"debug"</span>: <span class="string">"~2.2.0"</span>,</span><br><span class="line">    <span class="string">"express"</span>: <span class="string">"~4.13.1"</span>,</span><br><span class="line">    <span class="string">"jade"</span>: <span class="string">"~1.11.0"</span>,</span><br><span class="line">    <span class="string">"mongoose"</span>: <span class="string">"^4.2.8"</span>,</span><br><span class="line">    <span class="string">"morgan"</span>: <span class="string">"~1.6.1"</span>,</span><br><span class="line">    <span class="string">"serve-favicon"</span>: <span class="string">"~2.3.0"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>可以看到<code>&quot;start&quot;: &quot;node ./bin/www&quot;</code>，因此，启动脚本需要在终端执行</p>
+<pre><code>$ node bin/www
+</code></pre><p>然后打开另外一个窗口，输入：</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl <span class="string">localhost:</span><span class="number">3000</span><span class="regexp">/users/</span>test</span><br></pre></td></tr></table></figure>
+<p>可以看到<code>node bin/www</code>那端的窗口显示<code>GET / 200 28.562 ms - 170</code></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/09/git/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          git常用命令
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/07/goodWords/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">名言佳句整理</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Mongodb" data-title="Node.js操作MongoDB数据库" data-url="hawx1993.github.io/2015/12/07/Mongodb/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+		var duoshuoQuery = {short_name:"trigkit4"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0]
+			|| document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 trigkit4
+    	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
