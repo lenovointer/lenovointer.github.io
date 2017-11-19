@@ -2,8 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a9ae81-1740-442a-b5b3-8d27d106a168" name="Default" comment="# copy template">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/me.jpeg" afterPath="$PROJECT_DIR$/img/me.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html" afterPath="$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/04/Native JS/index.html" afterPath="$PROJECT_DIR$/2015/12/04/Native JS/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/04/es6/index.html" afterPath="$PROJECT_DIR$/2015/12/04/es6/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/04/react/index.html" afterPath="$PROJECT_DIR$/2015/12/04/react/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/04/someTips/index.html" afterPath="$PROJECT_DIR$/2015/12/04/someTips/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/07/Mongodb/index.html" afterPath="$PROJECT_DIR$/2015/12/07/Mongodb/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/07/goodWords/index.html" afterPath="$PROJECT_DIR$/2015/12/07/goodWords/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/09/git/index.html" afterPath="$PROJECT_DIR$/2015/12/09/git/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/10/jade/index.html" afterPath="$PROJECT_DIR$/2015/12/10/jade/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/11/github-project/index.html" afterPath="$PROJECT_DIR$/2015/12/11/github-project/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/11/js-class/index.html" afterPath="$PROJECT_DIR$/2015/12/11/js-class/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/11/js-extends/index.html" afterPath="$PROJECT_DIR$/2015/12/11/js-extends/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/22/jsFramework/index.html" afterPath="$PROJECT_DIR$/2015/12/22/jsFramework/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/23/js-this/index.html" afterPath="$PROJECT_DIR$/2015/12/23/js-this/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/25/jsReaserch/index.html" afterPath="$PROJECT_DIR$/2015/12/25/jsReaserch/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2015/12/27/sumup/index.html" afterPath="$PROJECT_DIR$/2015/12/27/sumup/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2016/03/21/webpack-development/index.html" afterPath="$PROJECT_DIR$/2016/03/21/webpack-development/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2015/12/index.html" afterPath="$PROJECT_DIR$/archives/2015/12/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2015/12/page/2/index.html" afterPath="$PROJECT_DIR$/archives/2015/12/page/2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2015/index.html" afterPath="$PROJECT_DIR$/archives/2015/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2015/page/2/index.html" afterPath="$PROJECT_DIR$/archives/2015/page/2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2016/03/index.html" afterPath="$PROJECT_DIR$/archives/2016/03/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/2016/index.html" afterPath="$PROJECT_DIR$/archives/2016/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/index.html" afterPath="$PROJECT_DIR$/archives/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archives/page/2/index.html" afterPath="$PROJECT_DIR$/archives/page/2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/categories/tech/index.html" afterPath="$PROJECT_DIR$/categories/tech/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/2/index.html" afterPath="$PROJECT_DIR$/page/2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/ECMAScript6/index.html" afterPath="$PROJECT_DIR$/tags/ECMAScript6/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/MongoDB/index.html" afterPath="$PROJECT_DIR$/tags/MongoDB/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/Mongoose/index.html" afterPath="$PROJECT_DIR$/tags/Mongoose/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/Node-js/index.html" afterPath="$PROJECT_DIR$/tags/Node-js/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/bower/index.html" afterPath="$PROJECT_DIR$/tags/bower/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/brew/index.html" afterPath="$PROJECT_DIR$/tags/brew/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/es6/index.html" afterPath="$PROJECT_DIR$/tags/es6/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/git/index.html" afterPath="$PROJECT_DIR$/tags/git/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/github/index.html" afterPath="$PROJECT_DIR$/tags/github/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/jade/index.html" afterPath="$PROJECT_DIR$/tags/jade/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/javascript/index.html" afterPath="$PROJECT_DIR$/tags/javascript/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/js/index.html" afterPath="$PROJECT_DIR$/tags/js/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/linux/index.html" afterPath="$PROJECT_DIR$/tags/linux/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/nvm/index.html" afterPath="$PROJECT_DIR$/tags/nvm/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/react-native/index.html" afterPath="$PROJECT_DIR$/tags/react-native/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/reactjs/index.html" afterPath="$PROJECT_DIR$/tags/reactjs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/this/index.html" afterPath="$PROJECT_DIR$/tags/this/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/tips/index.html" afterPath="$PROJECT_DIR$/tags/tips/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/webpack/index.html" afterPath="$PROJECT_DIR$/tags/webpack/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/前端/index.html" afterPath="$PROJECT_DIR$/tags/前端/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/学习笔记/index.html" afterPath="$PROJECT_DIR$/tags/学习笔记/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/小结/index.html" afterPath="$PROJECT_DIR$/tags/小结/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/框架/index.html" afterPath="$PROJECT_DIR$/tags/框架/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/模板引擎/index.html" afterPath="$PROJECT_DIR$/tags/模板引擎/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tags/随笔/index.html" afterPath="$PROJECT_DIR$/tags/随笔/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tech/index.html" afterPath="$PROJECT_DIR$/tech/index.html" />
     </list>
     <ignored path="lenovointer.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +79,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tags/随笔/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6792452">
-              <caret line="263" column="44" selection-start-line="263" selection-start-column="13" selection-end-line="263" selection-end-column="44" />
+            <state vertical-scroll-proportion="-8.653846">
+              <caret line="135" column="78" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -37,9 +89,32 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6933333">
-              <caret line="430" column="3" selection-start-line="430" selection-start-column="3" selection-end-line="430" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.33284023">
+              <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/mobile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+              <folding>
+                <marker date="1505923928000" expanded="true" signature="1394:1552" placeholder="..." />
+                <marker date="1505923928000" expanded="true" signature="1424:1506" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,30 +175,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lenovointer.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lenovointer.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lenovointer.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lenovointer.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -135,6 +186,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -219,10 +271,10 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18268467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6830601" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6821918" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37534246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37534246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -247,14 +299,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tags/bower/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.860215">
@@ -309,18 +353,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/mobile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+          <folding>
+            <marker date="1505923928000" expanded="true" signature="1394:1552" placeholder="..." />
+            <marker date="1505923928000" expanded="true" signature="1424:1506" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tags/随笔/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6792452">
-          <caret line="263" column="44" selection-start-line="263" selection-start-column="13" selection-end-line="263" selection-end-column="44" />
+        <state vertical-scroll-proportion="-8.653846">
+          <caret line="135" column="78" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2015/12/03/mac install mongodb/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6933333">
-          <caret line="430" column="3" selection-start-line="430" selection-start-column="3" selection-end-line="430" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.33284023">
+          <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
           <folding />
         </state>
       </provider>
